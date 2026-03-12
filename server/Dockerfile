@@ -1,4 +1,4 @@
-# Node server for Thumblify backend
+# Node server for Thumbnail backend
 FROM node:18-alpine
 WORKDIR /app
 
