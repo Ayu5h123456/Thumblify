@@ -3,7 +3,7 @@ import type { TestimonialCardProps } from '../types';
 
 export default function TestimonialCard({ testimonial, index }: TestimonialCardProps) {
     return (
-        <motion.div className='p-4 rounded-lg mx-4 w-72 shrink-0 bg-pink-950/30 border border-pink-950' initial={{ y: 150, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ delay: index * 0.15, type: 'spring', stiffness: 320, damping: 70, mass: 1 }}>
+        <motion.div className='p-4 rounded-lg mx-4 w-72 shrink-0 bg-gray-950/30 border border-gray-950' initial={{ y: 150, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ delay: index * 0.15, type: 'spring', stiffness: 320, damping: 70, mass: 1 }}>
             <div className='flex gap-2'>
                 <img className='size-11 rounded-full' src={testimonial.image} alt={testimonial.name} height={50} width={50} />
                 <div className='flex flex-col'>

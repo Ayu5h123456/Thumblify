@@ -17,7 +17,7 @@ export default function Footer() {
                         <ul className='mt-2 space-y-2'>
                             {section.links.map((link: IFooterLink, index: number) => (
                                 <li key={index}>
-                                    <Link to={link.href} className='hover:text-pink-600 transition'>
+                                    <Link to={link.href} className='hover:text-gray-600 transition'>
                                         {link.name}
                                     </Link>
                                 </li>
@@ -30,16 +30,16 @@ export default function Footer() {
                 <p className='max-w-60'>Making every customer feel valued—no matter the size of your audience.</p>
                 <div className='flex items-center gap-4 mt-3'>
                     <a href='https://dribbble.com/prebuiltui' target='_blank' rel='noreferrer'>
-                        <DribbbleIcon className='size-5 hover:text-pink-500' />
+                        <DribbbleIcon className='size-5 hover:text-gray-500' />
                     </a>
                     <a href='https://www.linkedin.com/company/prebuiltui' target='_blank' rel='noreferrer'>
-                        <LinkedinIcon className='size-5 hover:text-pink-500' />
+                        <LinkedinIcon className='size-5 hover:text-gray-500' />
                     </a>
                     <a href='https://x.com/prebuiltui' target='_blank' rel='noreferrer'>
-                        <TwitterIcon className='size-5 hover:text-pink-500' />
+                        <TwitterIcon className='size-5 hover:text-gray-500' />
                     </a>
                     <a href='https://www.youtube.com/@prebuiltui' target='_blank' rel='noreferrer'>
-                        <YoutubeIcon className='size-6 hover:text-pink-500' />
+                        <YoutubeIcon className='size-6 hover:text-gray-500' />
                     </a>
                 </div>
                 <p className='mt-3 text-center'>
