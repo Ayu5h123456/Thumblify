@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:3000"
+    env_file:
+      - ./server/.env
+    # if you want to mount code for development uncomment the next line
+    # volumes:
+    #   - ./server:/app
+    depends_on: []
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      # add API url if your frontend needs it
+      # - VITE_API_URL=http://localhost:5000
+    depends_on:
+      - server
